@@ -2,7 +2,14 @@ use rand::Rng;
 use std::io::{self, prelude::*, BufReader};
 use std::fs::{File, OpenOptions};
 use std::collections::HashMap;
-
+//another way to randomly select:
+/* 
+//use rand::seq::SliceRandom;
+    //in main, add:
+   
+    let another_way = people.choose(& mut rand::thread_rng()).unwrap();
+    dbg!(another_way);
+*/
 fn main() {
 
     let mut file = new_file();
