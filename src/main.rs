@@ -39,6 +39,7 @@ fn random_value(hashmap: &HashMap<String, String>) {
     println!("the next host will be: {}", &iter.nth(random_index).unwrap());
 }
 
+
 fn duplicate_checker (hashmap: &mut HashMap<String, String>, name: &String) -> Result<(),()> {
     if name.as_str() == "" {
         return Err(())
